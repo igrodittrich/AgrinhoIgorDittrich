@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De onde vem o Hambúrguer?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Monte seu Hambúrguer!</h1>
+  <p>Clique nos ingredientes para saber de onde eles vêm e adicioná-los ao seu hambúrguer.</p>
+
+  <div class="ingredientes">
+    <div class="item" onclick="mostrarInfo('pao')">Pão</div>
+    <div class="item" onclick="mostrarInfo('carne')">Carne</div>
+    <div class="item" onclick="mostrarInfo('alface')">Alface</div>
+    <div class="item" onclick="mostrarInfo('tomate')">Tomate</div>
+    <div class="item" onclick="mostrarInfo('queijo')">Queijo</div>
+  </div>
+
+  <div id="info">
+    <strong>Informações aparecerão aqui quando você clicar em um ingrediente.</strong>
+  </div>
+
+  <div id="hamburguer">
+    <h3>Seu Hambúrguer:</h3>
+    <div id="camadas"></div>
+  </div>
+
+<script 
+src="script.js">
+</script>
+
+  </script>
+</body>
+</html>
+
+
+
