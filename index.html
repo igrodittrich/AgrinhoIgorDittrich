@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>De onde vem o Hambúrguer?</title>
+  <title>Lanche bem bolado</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Monte seu Hambúrguer!</h1>
-  <p>Clique nos ingredientes para saber de onde eles vêm e adicioná-los ao seu hambúrguer.</p>
+  <h1>Da plantação até o Fast Food</h1>
+  <p>até um simples hambúrguer depende do trabalho no campo <br>
+    clique em cada um dos ingredientes para ver a sua origem</p>
 
   <div class="ingredientes">
     <div class="item" onclick="mostrarInfo('pao')">Pão</div>
@@ -18,22 +19,23 @@
     <div class="item" onclick="mostrarInfo('queijo')">Queijo</div>
   </div>
 
-  <div id="info">
-    <strong>Informações aparecerão aqui quando você clicar em um ingrediente.</strong>
-  </div>
+  <div id="info"></div>
 
+<!--
+Botão de reiniciar a montagem do hamburguer
+
+  Eu estava brincando aqui e montei esse negócio que quando você clica em cada ingrediente ele fazia um desenho,
+  dando a entender que era a montagem do hamburguer. Mas não sei, resolvi remover. Acho que tirar esse comentário 
+  faz a montagem voltar a funcionar
+    - Igor
+
+  <h3>Seu hambúrguer:</h3>
   <div id="hamburguer">
-    <h3>Seu Hambúrguer:</h3>
     <div id="camadas"></div>
   </div>
-
-<script 
-src="script.js">
-</script>
-
-  </script>
+  <button onclick="reiniciarHamburguer()">Reiniciar</button>
+  -->
+ 
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-

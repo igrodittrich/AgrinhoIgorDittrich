@@ -1,13 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #582a0b;
-  text-align: center;
+  font-family: Verdana, sans-serif;
+  background: #f7f4ea;
+  text-align: left;
   padding: 20px;
   margin: 0;
 }
 
 h1 {
-  color: #ff0000;
+  color: #8B0000;
 }
 
 h3 {
@@ -16,7 +16,7 @@ h3 {
 
 .ingredientes {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   gap: 20px;
   margin: 30px 0;
@@ -45,7 +45,7 @@ h3 {
   border-radius: 10px;
   border: 1px solid #ddd;
   max-width: 500px;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: opacity 0.5s ease-in-out;
@@ -58,16 +58,55 @@ h3 {
   border: 2px dashed #d2691e;
   border-radius: 12px;
   max-width: 300px;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
 }
 
 .camada {
-  margin: 5px 0;
-  padding: 8px;
-  background: #ffe4b5;
-  border-radius: 8px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  width: 200px;
+  height: 30px;
+  margin: 5px auto;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
   transform: translateY(20px);
   opacity: 0;
+}
+
+.camada.pao {
+  background-color: #dca85e;
+}
+
+.camada.carne {
+  background-color: #7b3f00;
+  height: 40px;
+}
+
+.camada.alface {
+  background-color: #4caf50;
+}
+
+.camada.tomate {
+  background-color: #e53935;
+}
+
+.camada.queijo {
+  background-color: #fbc02d;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff8c00;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e07b00;
 }
